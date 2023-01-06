@@ -1,20 +1,26 @@
 import Button from "../Button";
-import { ButtonContainer, FormContainer, FormControl, Input } from "./styled";
+import {
+  ButtonContainer,
+  FormContainer,
+  FormControl,
+  Input,
+  Label,
+} from "./styled";
 const Form = () => {
   return (
     <FormContainer>
       <FormControl>
-        <label htmlFor="name">Full Name:</label>
+        <Label htmlFor="name">Full Name:</Label>
         <Input type="text" id="name" placeholder="Nasser Toghiri" />
       </FormControl>
 
       <FormControl>
-        <label htmlFor="email">Email:</label>
+        <Label htmlFor="email">Email:</Label>
         <Input type="email" id="email" placeholder="N.Toghiri@Gmail.com" />
       </FormControl>
 
       <FormControl>
-        <label htmlFor="age">Age:</label>
+        <Label htmlFor="age">Age:</Label>
         <Input type="number" id="age" placeholder="-- --" />
       </FormControl>
 

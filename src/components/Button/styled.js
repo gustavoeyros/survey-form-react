@@ -9,6 +9,7 @@ const BtnStyle = styled.button`
   border-radius: 35px;
   color: white;
   font-weight: 700;
+  font-size: 16px;
 `;
 
 export default BtnStyle;
