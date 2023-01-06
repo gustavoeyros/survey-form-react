@@ -1,27 +1,28 @@
 import Button from "../Button";
+import { ButtonContainer, FormContainer, FormControl, Input } from "./styled";
 const Form = () => {
   return (
-    <form>
-      <div className="form-control">
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" />
-      </div>
+    <FormContainer>
+      <FormControl>
+        <label htmlFor="name">Full Name:</label>
+        <Input type="text" id="name" placeholder="Nasser Toghiri" />
+      </FormControl>
 
-      <div className="form-control">
+      <FormControl>
         <label htmlFor="email">Email:</label>
-        <input type="email" id="email" />
-      </div>
+        <Input type="email" id="email" placeholder="N.Toghiri@Gmail.com" />
+      </FormControl>
 
-      <div className="form-control">
+      <FormControl>
         <label htmlFor="age">Age:</label>
-        <input type="number" id="age" />
-      </div>
+        <Input type="number" id="age" placeholder="-- --" />
+      </FormControl>
 
-      <div className="button-container">
+      <ButtonContainer>
         <Button title="Back" />
         <Button title="Submit" />
-      </div>
-    </form>
+      </ButtonContainer>
+    </FormContainer>
   );
 };
 
