@@ -25,7 +25,7 @@ export const FormControl = styled.div`
 export const Input = styled.input`
   padding: 6px 11px;
   font-size: 16px;
-  width: 100%;
+  ${(props) => (props.type === "number" ? "width: 30%;" : "width: 100%;")}
   height: 20px;
   border-radius: 20px;
   border: 1px solid rgba(0, 0, 0, 0.25);
