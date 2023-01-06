@@ -1,3 +1,4 @@
+import Button from "../Button";
 const Form = () => {
   return (
     <form>
@@ -14,6 +15,11 @@ const Form = () => {
       <div className="form-control">
         <label htmlFor="age">Age:</label>
         <input type="number" id="age" />
+      </div>
+
+      <div className="button-container">
+        <Button title="Back" />
+        <Button title="Submit" />
       </div>
     </form>
   );
