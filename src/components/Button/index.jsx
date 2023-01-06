@@ -1,5 +1,7 @@
+import BtnStyle from "./styled";
+
 const Button = (props) => {
-  return <button type="submit">{props.title}</button>;
+  return <BtnStyle type="submit">{props.title}</BtnStyle>;
 };
 
 export default Button;
